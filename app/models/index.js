@@ -8,5 +8,6 @@ const CONFIG = require('../../config');
  ********************************/
 
 module.exports = {
-    userModel: require('./runestake/userModel')
+    userModel: require('./runestake/userModel'),
+    sessionModel : require('./runestake/sessionModel')
 };

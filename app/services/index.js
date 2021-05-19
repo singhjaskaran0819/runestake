@@ -9,5 +9,6 @@ module.exports = {
     authService: require(`./runestake/authService`),
     sessionService: require(`./runestake/sessionService`),
     socketService: require(`./runestake/socketService`),
-    fileUploadService: require(`./runestake/fileUploadService`)
+    fileUploadService: require(`./runestake/fileUploadService`),
+    userService: require(`./runestake/userService`)
 };

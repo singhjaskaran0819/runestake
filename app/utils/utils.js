@@ -1,15 +1,14 @@
 'use strict';
 
-const CONSTANTS = require('./constants'),
-	MONGOOSE = require('mongoose'),
-	BCRYPT = require("bcrypt"),
-	JWT = require("jsonwebtoken"),
-	fs = require("fs"),
-	CONFIG = require('../../config'),
-	handlebars = require('handlebars'),
-	nodemailer = require('nodemailer'),
-	awsSms = require('aws-sns-sms');
-
+const CONSTANTS = require('./constants');
+const MONGOOSE = require('mongoose');
+const BCRYPT = require("bcrypt");
+const JWT = require("jsonwebtoken");
+const fs = require("fs");
+const CONFIG = require('../../config');
+const handlebars = require('handlebars');
+const nodemailer = require('nodemailer');
+const awsSms = require('aws-sns-sms');
 const awsConfig = {
 	accessKeyId: CONFIG.AWS.AWS_ACCESS_KEY_ID,
 	secretAccessKey: CONFIG.AWS.AWS_SECRET_ACESS_KEY,
@@ -236,4 +235,5 @@ commonFunctions.sendSms = async (receiver, content) => {
 	return smsResponse
 }
 
+//export statement
 module.exports = commonFunctions;

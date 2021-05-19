@@ -81,6 +81,10 @@ var defaults = {
     },
     SERVER_URL: process.env.SERVER_URL || 'http://localhost:3000',
     PATH_TO_UPLOAD_FILES_ON_LOCAL: process.env.PATH_TO_UPLOAD_FILES_ON_LOCAL || '/uploads/files',
+    REDIS: {
+        PORT: process.env.REDIS_PORT || '6379',
+        HOST: process.env.REDIS_HOST || '127.0.0.1'
+    },
 };
 
 let currentEnvironment = process.env.NODE_ENV || 'production';

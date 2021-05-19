@@ -25,5 +25,7 @@ module.exports = {
   USER_ALREADY_EXISTS: 'User already exists',
   PASSWORD_RESET: 'Password reset successfully',
   RESET_PASSWORD_TOKEN_EXPIRED: 'Link has been expired, please create new one',
-  NEW_AND_CONFIRM_PASSWORD_NOT_MATCHED: 'New password and confirm password should be matched'
+  NEW_AND_CONFIRM_PASSWORD_NOT_MATCHED: 'New password and confirm password should be matched',
+  USER_ALREADY_EXIST: 'User already exists.',
+  USER_UPDATED_SUCCESSFULLY : 'User updated successfully.'
 };

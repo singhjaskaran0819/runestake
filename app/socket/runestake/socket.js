@@ -10,6 +10,10 @@ let socketConnection = {};
 socketConnection.connect = (io) => {
     // io.use(SERVICES.authService.socketAuthentication);
     io.on(SOCKET_EVENTS.CONNECTION, async (socket) => {
+        socket.use((packet, next) => {
+            console.log("Socket hit:=>", packet);
+            next();
+        });
         console.log('connection established', socket.handshake.query.userName.toUpperCase(), socket.id);
 
         /**

@@ -1,8 +1,13 @@
-const CONFIG = require('../../../config');
 const sessionModel = require(`../../models/runestake/sessionModel`);
 
 let sessionService = {};
 
+/**
+ * function to create user's session'
+ */
+sessionService.createSession = async (payload) => {
+    return await new sessionModel(payload).save();
+};
 /**
  * function to update user's session in the database.
  */
@@ -31,8 +36,8 @@ sessionService.getSession = async (criteria) => {
 /**
  * function to remove session of a user when user is deleted from system.
  */
-sessionService.removeSession = async (userId) => {
-    return await sessionModel.findOneAndRemove({ userId });
+sessionService.removeSession = async (criteria) => {
+    return await sessionModel.findOneAndRemove( criteria );
 };
 
 module.exports = sessionService;
