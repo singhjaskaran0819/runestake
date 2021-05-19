@@ -1,4 +1,5 @@
 'use strict';
+
 const CONFIG = require('../../config');
 /********************************
  **** Managing all the controllers ***

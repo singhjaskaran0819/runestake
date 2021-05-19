@@ -1,3 +1,5 @@
+'use strict';
+
 const fs = require('fs');
 const swaggerJson = require('../../../config').swagger;
 const j2s = require('joi-to-swagger');

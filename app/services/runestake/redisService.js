@@ -1,3 +1,5 @@
+'use strict';
+
 const CONFIG = require('../../config');
 const REDIS = require('redis').createClient({
 	port: CONFIG.REDIS.PORT,
@@ -9,7 +11,7 @@ let redisService = {};
  * function to save data on redis 
  */
 redisService.saveDataInRedis = (key, data) => {
-    REDIS.set(key.toString(), JSON.stringify(data));
+	REDIS.set(key.toString(), JSON.stringify(data));
 	return;
 };
 

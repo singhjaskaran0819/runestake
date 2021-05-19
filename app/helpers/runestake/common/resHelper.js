@@ -1,3 +1,5 @@
+'use strict';
+
 let RESPONSE = {
     ERROR: {
         DATA_NOT_FOUND: (msg) => {

@@ -1,4 +1,5 @@
 'use strict';
+
 const CONFIG = require('../../../config')
 const userModel = require(`../../models/runestake/userModel`);
 const utils = require(`../../utils/utils`);

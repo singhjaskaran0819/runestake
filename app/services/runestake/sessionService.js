@@ -1,5 +1,6 @@
-const sessionModel = require(`../../models/runestake/sessionModel`);
+'use strict';
 
+const sessionModel = require(`../../models/runestake/sessionModel`);
 let sessionService = {};
 
 /**

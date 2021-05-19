@@ -1,3 +1,5 @@
+'use strict';
+
 const CONSTANTS = require('../utils/constants');
 const MODELS = require('../models');
 const { GENDER } = require('../utils/constants');
